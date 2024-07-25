@@ -1,0 +1,307 @@
+import java.util.*;
+public class Doctor_Appointment_Booking {
+    void Patient()
+    {
+        int ch;
+        System.out.println("1 Login \t\t\t 2.Registration");
+        System.out.println("Enter choice:");
+        Scanner sc =new Scanner(System.in);
+        ch = sc.nextInt();
+        switch (ch)
+        {
+            case 1:
+            {
+                System.out.println("Enter username :");
+                Scanner s=new Scanner(System.in);
+                String name= s.next();
+                System.out.println("Enter password :");
+                int pass=s.nextInt();
+                int city;
+                System.out.println("1.Nagpur\t\t\t2.Pune\t\t\t3.Mumbai");
+                System.out.println("Enter City :");
+                city=s.nextInt();
+                switch (city)
+                {
+                    case 1 :
+                    {
+                        System.out.println("list of doctor available in that city:");
+                        ArrayList<String> A = new ArrayList<>();
+                        A.add("Dr.John");
+                        A.add("Dr.Thomas");
+                        A.add("Dr.Smith");
+                        A.add("Dr.Paul");
+                        for(String a:A){
+                            System.out.println(a);
+                        }
+                        System.out.print("Select Doctor you want for appointment:");
+                        int doctor=s.nextInt();
+                        switch (doctor){
+                            case 1:
+                            {
+                                System.out.println("Doctor Name : John");
+                                System.out.println("Expertise : Orthologist");
+                                System.out.println("Experience :20");
+                                System.out.println("Phone number : 12345678");
+                            }
+                            break;
+                            case 2:
+                            {
+                                System.out.println("Doctor Name : Thomas");
+                                System.out.println("Expertise :Physician");
+                                System.out.println("Experience :10");
+                                System.out.println("Phone number : 12345678");
+                            }
+                            break;
+                            case 3:
+                            {
+                                System.out.println("Doctor Name : Paul");
+                                System.out.println("Expertise : Psychologist");
+                                System.out.println("Experience :5");
+                                System.out.println("Phone number : 12345678");
+                            }
+                            break;
+                            case 4:
+                            {
+                                System.out.println("Doctor Name : Smith");
+                                System.out.println("Expertise : Cardiologist");
+                                System.out.println("Experience :25");
+                                System.out.println("Phone number : 12345678");
+                            }
+                            break;
+                        }
+                    }
+                    break;
+                    case 2 :
+                    {
+                        System.out.println("list of doctor available in that city:");
+                        ArrayList<String> A = new ArrayList<>();
+                        A.add("Dr.John");
+                        A.add("Dr.Thomas");
+                        A.add("Dr.Smith");
+                        A.add("Dr.Paul");
+                        for(String a:A){
+                            System.out.println(a);
+                        }
+                        System.out.print("Select Doctor you want for appointment:");
+                        int doctor=s.nextInt();
+                        switch (doctor){
+                            case 1:
+                            {
+                                System.out.println("Doctor Name : John");
+                                System.out.println("Expertise : Orthologist");
+                                System.out.println("Experience :20");
+                                System.out.println("Phone number : 12345678");
+                            }
+                            break;
+                            case 2:
+                            {
+                                System.out.println("Doctor Name : Thomas");
+                                System.out.println("Expertise :Physician");
+                                System.out.println("Experience :10");
+                                System.out.println("Phone number : 12345678");
+                            }
+                            break;
+                            case 3:
+                            {
+                                System.out.println("Doctor Name : Paul");
+                                System.out.println("Expertise : Psychologist");
+                                System.out.println("Experience :5");
+                                System.out.println("Phone number : 12345678");
+                            }
+                            break;
+                            case 4:
+                            {
+                                System.out.println("Doctor Name : Smith");
+                                System.out.println("Expertise : Cardiologist");
+                                System.out.println("Experience :25");
+                                System.out.println("Phone number : 12345678");
+                            }
+                            break;
+                        }
+                    }
+                    break;
+                    case 3 :
+                    {
+                        System.out.println("list of doctor available in that city:");
+                        ArrayList<String> A = new ArrayList<>();
+                        A.add("Dr.John");
+                        A.add("Dr.Thomas");
+                        A.add("Dr.Smith");
+                        A.add("Dr.Paul");
+                        for(String a:A){
+                            System.out.println(a);
+                        }
+                        System.out.print("Select Doctor you want for appointment:");
+                        int doctor=s.nextInt();
+                        switch (doctor){
+                            case 1:
+                            {
+                                System.out.println("Doctor Name : John");
+                                System.out.println("Expertise : Orthologist");
+                                System.out.println("Experience :20");
+                                System.out.println("Phone number : 12345678");
+                            }
+                            break;
+                            case 2:
+                            {
+                                System.out.println("Doctor Name : Thomas");
+                                System.out.println("Expertise :Physician");
+                                System.out.println("Experience :10");
+                                System.out.println("Phone number : 12345678");
+                            }
+                            break;
+                            case 3:
+                            {
+                                System.out.println("Doctor Name : Smith");
+                                System.out.println("Expertise : Psychologist");
+                                System.out.println("Experience :5");
+                                System.out.println("Phone number : 12345678");
+                            }
+                            break;
+                            case 4:
+                            {
+                                System.out.println("Doctor Name : Paul");
+                                System.out.println("Expertise : Cardiologist");
+                                System.out.println("Experience :25");
+                                System.out.println("Phone number : 12345678");
+                            }
+                            break;
+                        }
+                    }
+                }
+                System.out.println("Please Enter Details for appointment");
+                System.out.print("Enter your Name:");
+                String Name= sc.next();
+                System.out.print("Enter your age");
+                int age = sc.nextInt();
+                System.out.print("Enter your mobile number :");
+                int number = sc.nextInt();
+                System.out.println("Your Appointment is booked");
+            }
+            break;
+            case 2 :
+            {
+                System.out.print("Enter id :");
+                Scanner scan =new Scanner(System.in);
+                int id= scan.nextInt();
+                System.out.print("Enter name :");
+                String name= sc.next();
+                System.out.print("Enter address :");
+                String address= sc.next();
+                System.out.print("Enter mobile number :");
+                int mobno= scan.nextInt();
+                System.out.println("Your Registration is Successful...");
+            }
+        }
+    }
+    void Admin()
+    {
+        int ch;
+        System.out.println("1.Login \t\t\t 2.Doctor Registration");
+        System.out.println("Enter choice:");
+        Scanner sc =new Scanner(System.in);
+        ch = sc.nextInt();
+        switch (ch)
+        {
+            case 1:
+            {
+                System.out.println("Enter username :");
+                Scanner s=new Scanner(System.in);
+                String name= s.next();
+                System.out.println("Enter password :");
+                int pass=s.nextInt();
+                int drname;
+                System.out.println("1.John\t\t\t2.Thomas\t\t\t3.Smith\t\t\t4.Paul");
+                System.out.println("choose Doctor :");
+                drname=s.nextInt();
+                switch(drname)
+                {
+                    case 1:
+                    {
+                            System.out.println("Profile...");
+                            System.out.println("Doctor Name : John");
+                            System.out.println("Expertise : Orthologist");
+                            System.out.println("Experience :20");
+                            System.out.println("Phone number : 12345678");
+                            System.out.print("Please enter number of qualification:");
+                            int qua = sc.nextInt();
+                            System.out.println("Number of Appointment : 3");
+
+                    }
+                    break;
+                    case 2:
+                    {
+                            System.out.println("Profile...");
+                            System.out.println("Doctor Name : Thomas");
+                            System.out.println("Expertise :Physician");
+                            System.out.println("Experience :10");
+                            System.out.println("Phone number : 12345678");
+                            System.out.print("Please enter number of qualification:");
+                            int qua = sc.nextInt();
+                            System.out.println("Number of Appointment : 2");
+                    }
+                    break;
+                    case 3:
+                    {
+                            System.out.println("Profile...");
+                            System.out.println("Doctor Name : Smith");
+                            System.out.println("Expertise : Psychologist");
+                            System.out.println("Experience :5");
+                            System.out.println("Phone number : 12345678");
+                            System.out.print("Please enter number of qualification:");
+                            int qua = sc.nextInt();
+                            System.out.println("Number of Appointment : 5");
+                    }
+                    break;
+                    case 4:
+                    {
+                            System.out.println("Profile...");
+                            System.out.println("Doctor Name : Paul");
+                            System.out.println("Expertise : Cardiologist");
+                            System.out.println("Experience :25");
+                            System.out.println("Phone number : 12345678");
+                            System.out.print("Please enter number of qualification:");
+                            int qua = sc.nextInt();
+                            System.out.println("Number of Appointment : 6");
+                    }
+                    break;
+                }
+            }
+            break;
+            case 2 :{
+                System.out.print("Enter id :");
+                Scanner scan =new Scanner(System.in);
+                int id= scan.nextInt();
+                System.out.print("Enter name :");
+                String name= sc.next();
+                System.out.print("Enter address :");
+                String address= sc.next();
+                System.out.print("Enter mobile number :");
+                int mobno= scan.nextInt();
+                System.out.print("Enter opening time :");
+                String otime= scan.next();
+                System.out.print("Enter closing time :");
+                String ctime= scan.next();
+                System.out.println("Registration is Successful...");
+            }
+        }
+    }
+    public static void main(String[] args) {
+        System.out.println("|| Doctor Appointment Booking System ||");
+        Doctor_Appointment_Booking obj = new Doctor_Appointment_Booking();
+        int choice;
+        System.out.println("1.Patient\t\t\t2.Admin");
+        System.out.print("Enter choice:");
+        Scanner p=new Scanner(System.in);
+        choice=p.nextInt();
+        switch(choice)
+        {
+            case 1 :
+                obj.Patient();
+            break;
+            case 2 :
+                obj.Admin();
+            break;
+        }
+    }
+}
